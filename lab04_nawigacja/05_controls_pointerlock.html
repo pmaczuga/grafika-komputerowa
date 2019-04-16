@@ -281,15 +281,15 @@
 				// scene.add( mask );
 				// camera.add( mask );
 
-				var gunGeometry = new THREE.PlaneGeometry(13.75, 5, 1, 1);
+				var gunGeometry = new THREE.PlaneGeometry(3, 1.09, 1, 1);
 				var gunMaterial = new THREE.MeshBasicMaterial();
 				var gunTexture = THREE.ImageUtils.loadTexture("doom.png");
 				gunMaterial.map = gunTexture;
 				gunMaterial.transparent = true;
 				var gun = new THREE.Mesh( gunGeometry, gunMaterial );
-				gun.position.z = -10;
-				gun.position.x = 8;
-				gun.position.y = -5.2;
+				gun.position.z = -2;
+				gun.position.x = 1.5;
+				gun.position.y = -1;
 				scene.add( gun );
 				camera.add( gun );
 
